@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style-type: none;
+}
+.menu a {
+  text-decoration: none;
+}
+
+header {
+  text-transform: uppercase;
+}
+
+.header-top {
+  background-color: #0482f9;
+  color: #ffffff;
+  padding: 3px 0;
+}
+.header-top .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 0.6em;
+}
+.header-top .menu li {
+  margin-left: 40px;
+}
+.header-top .menu li sup {
+  font-size: 0.4em;
+}
+
+.header-bottom {
+  padding: 10px 0;
+}
+.header-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bottom .logo img {
+  display: block;
+  width: 60px;
+}
+.header-bottom .menu {
+  display: flex;
+}
+.header-bottom .menu li {
+  margin-left: 20px;
+}
+.header-bottom .menu li a {
+  color: #000000;
+  font-size: 0.7em;
+}
+.header-bottom .menu li a i {
+  color: #0482f9;
+}
+.header-bottom .menu li.active {
+  border-bottom: 2px solid #0482f9;
+}
+.header-bottom .menu li.active a {
+  color: #0482f9;
+}
+.header-bottom .menu .search {
+  border-bottom: 1px solid #0482f9;
+}
+.header-bottom .menu .search input {
+  border: 0;
+  text-align: right;
+  width: 100px;
+}
+.header-bottom .menu .search i {
+  font-size: 0.6em;
+}
+
+.jumbotron {
+  height: 250px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
