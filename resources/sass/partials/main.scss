@@ -1,0 +1,40 @@
+main{
+    text-transform: uppercase;
+}
+
+.series{
+    background-color: #1c1c1c;
+    color: $brand_secondary_color;
+
+    h2{
+        background-color: $brand_primary_color;
+        font-size: $font_size_xl;
+        padding: 5px 20px;
+        position: relative;
+        top: -18px;
+        width: max-content;
+    }
+
+    .comics-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .comic{
+            padding: 0 10px 40px 10px;
+
+            img{
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                object-position: top;
+                margin-bottom: 10px;
+            }
+
+            &-name{
+                font-size: $font_size_md;
+                max-width: fit-content;
+            }
+        }
+    }
+    
+}

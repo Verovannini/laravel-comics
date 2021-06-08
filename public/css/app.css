@@ -90,3 +90,44 @@ header {
   background-image: url("../img/jumbotron.jpg");
   background-size: cover;
 }
+
+main {
+  text-transform: uppercase;
+}
+
+.series {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+.series h2 {
+  background-color: #0482f9;
+  font-size: 1.2em;
+  padding: 5px 20px;
+  position: relative;
+  top: -18px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.series .comics-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.series .comics-container .comic {
+  padding: 0 10px 40px 10px;
+}
+.series .comics-container .comic img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-bottom: 10px;
+}
+.series .comics-container .comic-name {
+  font-size: 0.6em;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
