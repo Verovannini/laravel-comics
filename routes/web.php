@@ -21,4 +21,26 @@ Route::get('/', function () {
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/comic/{id}', function ($id) {
+    $array_comics = config('comics');
+
+    $comic = [];
+
+    foreach($array_comics as $single_comic) {
+        if( $id == $single_comic['id']) {
+            $comic = $single_comic;
+        }
+    }
+
+    if(empty($comic)) {
+        abort('404');
+    }
+
+    $data = [
+        'comic' => $comic
+    ];
+
+    return view('comic', $data);
+})->name('comic');

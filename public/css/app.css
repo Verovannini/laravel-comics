@@ -13,6 +13,11 @@ body {
   margin: 0 auto;
 }
 
+.container-small {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .menu {
   list-style-type: none;
 }
@@ -91,13 +96,14 @@ header {
   background-size: cover;
 }
 
-main {
+.main-comics {
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .series {
   background-color: #1c1c1c;
-  color: #ffffff;
+  padding-bottom: 20px;
 }
 .series h2 {
   background-color: #0482f9;
@@ -112,13 +118,18 @@ main {
 .series .comics-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+.series .comics-container a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .series .comics-container .comic {
-  padding: 0 10px 40px 10px;
+  padding: 0 5px 40px 5px;
 }
 .series .comics-container .comic img {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -130,4 +141,88 @@ main {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+.series .btn {
+  text-align: center;
+}
+.series .btn a {
+  background-color: #0482f9;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 40px;
+  display: inline-block;
+  font-size: 0.6em;
+}
+
+.buy {
+  background-color: #0482f9;
+  padding: 30px;
+}
+.buy .container {
+  display: flex;
+  justify-content: space-between;
+}
+.buy .card {
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+}
+.buy .card img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.comic-image {
+  background-color: #0482f9;
+  height: 70px;
+}
+.comic-image img {
+  width: 130px;
+  position: relative;
+  bottom: 140px;
+  border: 1px solid #ffffff;
+}
+
+.comic-wrapper {
+  padding: 50px 0;
+}
+.comic-wrapper .comic-info {
+  display: flex;
+}
+.comic-wrapper h2 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: #0d3f5e;
+}
+.comic-wrapper .availability {
+  background-color: #58ba59;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  margin: 10px 0;
+}
+.comic-wrapper .availability .status {
+  color: #b3f588;
+  text-align: right;
+  border-right: 1px solid #000000;
+  flex-grow: 1;
+}
+.comic-wrapper .availability .price,
+.comic-wrapper .availability .status,
+.comic-wrapper .availability .check-available {
+  padding: 10px;
+}
+.comic-wrapper .description {
+  font-size: 0.7em;
+}
+.comic-wrapper .infos {
+  width: 70%;
+}
+.comic-wrapper .advertisement {
+  width: 30%;
+  margin-left: 20px;
+}
+.comic-wrapper .advertisement img {
+  width: 100%;
 }

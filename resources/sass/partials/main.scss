@@ -1,10 +1,13 @@
-main{
+// PAGE COMICS
+.main-comics{
     text-transform: uppercase;
+    color: $brand_secondary_color;
 }
 
+// Section Series
 .series{
     background-color: #1c1c1c;
-    color: $brand_secondary_color;
+    padding-bottom: 20px;
 
     h2{
         background-color: $brand_primary_color;
@@ -18,13 +21,19 @@ main{
     .comics-container{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            color: $brand_secondary_color;
+        }
 
         .comic{
-            padding: 0 10px 40px 10px;
+            padding: 0 5px 40px 5px;
 
             img{
-                width: 130px;
-                height: 130px;
+                width: 140px;
+                height: 140px;
                 object-fit: cover;
                 object-position: top;
                 margin-bottom: 10px;
@@ -36,5 +45,109 @@ main{
             }
         }
     }
+
+    .btn{
+        text-align: center;
+
+        a{
+            background-color: $brand_primary_color;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 5px 40px;
+            display: inline-block;
+            font-size: $font_size_md;
+        }
+        
+    }
     
 }
+
+// Section Info
+.buy{
+    background-color: $brand_primary_color;
+    padding: 30px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card{
+        display: flex;
+        align-items: center;
+        font-size: $font_size_lg;
+
+        img{
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+}
+
+// PAGE SINGLE COMIC
+.comic-image{
+    background-color: $brand_primary_color;
+    height: 70px;
+
+    img{
+        width: 130px;
+        position: relative;
+        bottom: 140px;
+        border: 1px solid $brand_secondary_color;
+    }
+}
+
+.comic-wrapper{
+    padding: 50px 0;
+
+    .comic-info{
+        display: flex;
+    }
+
+    h2{
+        text-transform: uppercase;
+        font-size: $font_size_xl;
+        color: $font_color;
+    }
+
+    .availability{
+        background-color: #58ba59;
+        color: $brand_secondary_color;
+        display: flex;
+        justify-content: space-between;
+        font-size: $font_size_lg;
+        margin: 10px 0;
+
+        .status{
+            color: #b3f588;
+            text-align: right;
+            border-right: 1px solid #000000;
+            flex-grow: 1;
+        }
+
+        .price,
+        .status,
+        .check-available{
+            padding: 10px;
+        }
+    }
+
+    .description{
+        font-size: $font_size_lg;
+    }
+
+    .infos{
+        width: 70%;
+    }
+
+    .advertisement{
+        width: 30%;
+        margin-left: 20px;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
