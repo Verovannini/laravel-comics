@@ -150,4 +150,47 @@
     }
 }
 
+.comic-details{
+    background-color: #f6f6f6;
+    padding: 20px 0 60px 0;
+    border-top: 1px solid $borders_color;
+    border-bottom: 1px solid $borders_color;
+
+    .container-small{
+        display: flex;
+    }
+
+    .talent{
+        margin-right: 40px;
+        width: 50%;
+    }
+    .specs{
+        width: 50%;
+    }
+
+    h3{
+        color: $font_color;
+        border-bottom: 1px solid $borders_color;
+        font-size: $font_size_xl;
+        padding-bottom: 20px;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $borders_color;
+        padding: 5px 0;
+
+        .small-title{
+            font-size: $font_size_lg;
+            color: $font_color;
+            width: 30%;
+        }
+
+        .list{
+            font-size: $font_size_lg;
+            width: 60%;
+        }
+    }
+}
 

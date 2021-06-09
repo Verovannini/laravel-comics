@@ -226,3 +226,41 @@ header {
 .comic-wrapper .advertisement img {
   width: 100%;
 }
+
+.comic-details {
+  background-color: #f6f6f6;
+  padding: 20px 0 60px 0;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.comic-details .container-small {
+  display: flex;
+}
+.comic-details .talent {
+  margin-right: 40px;
+  width: 50%;
+}
+.comic-details .specs {
+  width: 50%;
+}
+.comic-details h3 {
+  color: #0d3f5e;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+.comic-details .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 5px 0;
+}
+.comic-details .row .small-title {
+  font-size: 0.7em;
+  color: #0d3f5e;
+  width: 30%;
+}
+.comic-details .row .list {
+  font-size: 0.7em;
+  width: 60%;
+}
